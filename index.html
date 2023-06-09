@@ -6,6 +6,7 @@
     <title>Bootstrap demo</title>
     <script src="https://kit.fontawesome.com/047731cd3c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href=""style.css" rel="css-test"
   </head>
   
   <body>
@@ -22,70 +23,136 @@
           <div class="card-header " >
             
             <button type="button" class="btn btn-success">Create a new post</button>
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-             test
+            <button class="btn btn-secondary dropdown-toggle text-nowrap" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <li><a class="dropdown-item">logout </a></li>
             </ul>
           </div>
       </div>
-      <div class="d-flex p-2 justify-content-center">
-        <ul class="nav">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#"> link</a>
+     
+      </div> -->
+      <div class="d-flex justify-content-center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-grip"></i></button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
           </li>
-    
-        </ul> 
+          
+        </ul>
       </div>
 
-      <div class="d-flex p-2 justify-content-center">
-        <div class="row">
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="d-flex p-2 justify-content-center">
+            <div class="row">
+              <div class="col">
+                <img src="https://placekitten.com/765" width=100%; />
+              </div>
+              <div class="col">
+                <img src="https://placekitten.com/865" width=100%; />
+              </div>
+              <div class="col">
+                <img src="https://placekitten.com/654" width=100%; />
+              </div>
+            </div>
           </div>
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
+          <div class="d-flex p-2 justify-content-center">
+            <div class="row">
+              <div class="col">
+                <img src="https://placekitten.com/765" width=100%; />
+              </div>
+              <div class="col">
+                <img src="https://placekitten.com/865" width=100%; />
+              </div>
+              <div class="col">
+                <img src="https://placekitten.com/654" width=100%; />
+              </div>
+            </div>
           </div>
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
+          <div class="d-flex p-2 justify-content-center">
+            <div class="row">
+              <div class="col">
+                <img src="https://placekitten.com/765" width=100%; />
+              </div>
+              <div class="col">
+                <img src="https://placekitten.com/865" width=100%; />
+              </div>
+              <div class="col">
+                <img src="https://placekitten.com/654" width=100%; />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="d-flex p-2 justify-content-center">
-        <div class="row">
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
-          </div>
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
-          </div>
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
-          </div>
-        </div>
-      </div>
-      <div class="d-flex p-2 justify-content-center">
-        <div class="row">
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
-          </div>
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
-          </div>
-          <div class="col">
-            <img src="https://placekitten.com/667" width=100%; />
-          </div>
-        </div>
-      </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="d-flex flex-column align-items-center">
+            <div class="card d-flex p-2 " style="width:35rem;">
+            
+              <img src="https://placekitten.com/456" alt="" class="" />
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>left buttons</span> <span>bookmark</span>
+                </li>
+                <li class="list-group-item">
+                  This post was liked by <b>some people</b>, and <b>everyone</b>
+                </li>
+                <li class="list-group-item">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+                  provident nobis, fuga sint voluptatibus enim laborum veritatis et
+                  saepe, totam odio amet officiis quidem nihil consequuntur blanditiis
+                  possimus esse! Itaque?
+                </li>
+              </ul>
+            </div>
+            <div class="card d-flex p-2" style="width:35rem;">
+            
+              <img src="https://placekitten.com/345" alt="" class="" />
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>left buttons</span> <span>bookmark</span>
+                </li>
+                <li class="list-group-item">
+                  This post was liked by <b>some people</b>, and <b>everyone</b>
+                </li>
+                <li class="list-group-item">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+                  provident nobis, fuga sint voluptatibus enim laborum veritatis et
+                  saepe, totam odio amet officiis quidem nihil consequuntur blanditiis
+                  possimus esse! Itaque?
+                </li>
+              </ul>
+            </div>
+            <div class="card d-flex p-2 " style="width:35rem;">
+            
+              <img src="https://placekitten.com/662" alt="" class="" />
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>left buttons</span> <span>bookmark</span>
+                </li>
+                <li class="list-group-item">
+                  This post was liked by <b>some people</b>, and <b>everyone</b>
+                </li>
+                <li class="list-group-item">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+                  provident nobis, fuga sint voluptatibus enim laborum veritatis et
+                  saepe, totam odio amet officiis quidem nihil consequuntur blanditiis
+                  possimus esse! Itaque?
+                </li>
+              </ul>
+            </div>
+            </div>
       
+        </div>
+  
+      </div>
 
+   
 
 
 
